@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		BA3EA52A30AA59BF00A3E78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3EA51430AA59BE00A3E78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA3EA51B30AA59BE00A3E78A;
+			remoteInfo = EncoreBridge;
+		};
+		BA3EA53430AA59BF00A3E78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3EA51430AA59BE00A3E78A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA3EA51B30AA59BE00A3E78A;
+			remoteInfo = EncoreBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA3EA51C30AA59BE00A3E78A /* EncoreBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncoreBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3EA52930AA59BF00A3E78A /* EncoreBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoreBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3EA53330AA59BF00A3E78A /* EncoreBridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncoreBridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BA3EA51E30AA59BE00A3E78A /* EncoreBridge */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EncoreBridge;
+			sourceTree = "<group>";
+		};
+		BA3EA52C30AA59BF00A3E78A /* EncoreBridgeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EncoreBridgeTests;
+			sourceTree = "<group>";
+		};
+		BA3EA53630AA59BF00A3E78A /* EncoreBridgeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EncoreBridgeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA3EA51930AA59BE00A3E78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BA3EA52630AA59BF00A3E78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BA3EA53030AA59BF00A3E78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA3EA51330AA59BE00A3E78A = {
+			isa = PBXGroup;
+			children = (
+				BA3EA51E30AA59BE00A3E78A /* EncoreBridge */,
+				BA3EA52C30AA59BF00A3E78A /* EncoreBridgeTests */,
+				BA3EA53630AA59BF00A3E78A /* EncoreBridgeUITests */,
+				BA3EA51D30AA59BE00A3E78A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3EA51D30AA59BE00A3E78A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3EA51C30AA59BE00A3E78A /* EncoreBridge.app */,
+				BA3EA52930AA59BF00A3E78A /* EncoreBridgeTests.xctest */,
+				BA3EA53330AA59BF00A3E78A /* EncoreBridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA3EA51B30AA59BE00A3E78A /* EncoreBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3EA53B30AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridge" */;
+			buildPhases = (
+				BA3EA51830AA59BE00A3E78A /* Sources */,
+				BA3EA51930AA59BE00A3E78A /* Frameworks */,
+				BA3EA51A30AA59BE00A3E78A /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				BA3EA51E30AA59BE00A3E78A /* EncoreBridge */,
+			);
+			name = EncoreBridge;
+			productName = EncoreBridge;
+			productReference = BA3EA51C30AA59BE00A3E78A /* EncoreBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA3EA52830AA59BF00A3E78A /* EncoreBridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3EA53E30AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridgeTests" */;
+			buildPhases = (
+				BA3EA52530AA59BF00A3E78A /* Sources */,
+				BA3EA52630AA59BF00A3E78A /* Frameworks */,
+				BA3EA52730AA59BF00A3E78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA3EA52B30AA59BF00A3E78A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BA3EA52C30AA59BF00A3E78A /* EncoreBridgeTests */,
+			);
+			name = EncoreBridgeTests;
+			productName = EncoreBridgeTests;
+			productReference = BA3EA52930AA59BF00A3E78A /* EncoreBridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA3EA53230AA59BF00A3E78A /* EncoreBridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3EA54130AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridgeUITests" */;
+			buildPhases = (
+				BA3EA52F30AA59BF00A3E78A /* Sources */,
+				BA3EA53030AA59BF00A3E78A /* Frameworks */,
+				BA3EA53130AA59BF00A3E78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA3EA53530AA59BF00A3E78A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BA3EA53630AA59BF00A3E78A /* EncoreBridgeUITests */,
+			);
+			name = EncoreBridgeUITests;
+			productName = EncoreBridgeUITests;
+			productReference = BA3EA53330AA59BF00A3E78A /* EncoreBridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA3EA51430AA59BE00A3E78A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					BA3EA51B30AA59BE00A3E78A = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					BA3EA52830AA59BF00A3E78A = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = BA3EA51B30AA59BE00A3E78A;
+					};
+					BA3EA53230AA59BF00A3E78A = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = BA3EA51B30AA59BE00A3E78A;
+					};
+				};
+			};
+			buildConfigurationList = BA3EA51730AA59BE00A3E78A /* Build configuration list for PBXProject "EncoreBridge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA3EA51330AA59BE00A3E78A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BA3EA51D30AA59BE00A3E78A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA3EA51B30AA59BE00A3E78A /* EncoreBridge */,
+				BA3EA52830AA59BF00A3E78A /* EncoreBridgeTests */,
+				BA3EA53230AA59BF00A3E78A /* EncoreBridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA3EA51A30AA59BE00A3E78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		BA3EA52730AA59BF00A3E78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		BA3EA53130AA59BF00A3E78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA3EA51830AA59BE00A3E78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		BA3EA52530AA59BF00A3E78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		BA3EA52F30AA59BF00A3E78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA3EA52B30AA59BF00A3E78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA3EA51B30AA59BE00A3E78A /* EncoreBridge */;
+			targetProxy = BA3EA52A30AA59BF00A3E78A /* PBXContainerItemProxy */;
+		};
+		BA3EA53530AA59BF00A3E78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA3EA51B30AA59BE00A3E78A /* EncoreBridge */;
+			targetProxy = BA3EA53430AA59BF00A3E78A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BA3EA53930AA59BF00A3E78A /* Debug configuration for PBXProject "EncoreBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA3EA53A30AA59BF00A3E78A /* Release configuration for PBXProject "EncoreBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BA3EA53C30AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA3EA53D30AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridge" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BA3EA53F30AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridgeTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncoreBridge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EncoreBridge";
+			};
+			name = Debug;
+		};
+		BA3EA54030AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridgeTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncoreBridge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EncoreBridge";
+			};
+			name = Release;
+		};
+		BA3EA54230AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridgeUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EncoreBridge;
+			};
+			name = Debug;
+		};
+		BA3EA54330AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridgeUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H3JCHA3QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vandermesis.EncoreBridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EncoreBridge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA3EA51730AA59BE00A3E78A /* Build configuration list for PBXProject "EncoreBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3EA53930AA59BF00A3E78A /* Debug configuration for PBXProject "EncoreBridge" */,
+				BA3EA53A30AA59BF00A3E78A /* Release configuration for PBXProject "EncoreBridge" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BA3EA53B30AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3EA53C30AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridge" */,
+				BA3EA53D30AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridge" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BA3EA53E30AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3EA53F30AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridgeTests" */,
+				BA3EA54030AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridgeTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BA3EA54130AA59BF00A3E78A /* Build configuration list for PBXNativeTarget "EncoreBridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3EA54230AA59BF00A3E78A /* Debug configuration for PBXNativeTarget "EncoreBridgeUITests" */,
+				BA3EA54330AA59BF00A3E78A /* Release configuration for PBXNativeTarget "EncoreBridgeUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA3EA51430AA59BE00A3E78A /* Project object */;
+	validationLevel = 1;
+}
