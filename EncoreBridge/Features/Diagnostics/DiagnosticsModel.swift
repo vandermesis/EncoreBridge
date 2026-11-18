@@ -9,6 +9,7 @@ import Observation
 @Observable
 final class DiagnosticsModel {
     let monitor: PlaybackMonitor
+    /// The fifty most recent source and server entries, in arrival order.
     private(set) var messages: [String] = []
     private(set) var serverStatus = "Nie uruchomiono"
 
@@ -35,11 +36,13 @@ final class DiagnosticsModel {
             + "\n\n--- APPLE MUSIC ---\n" + music.diagnosticLogText
     }
 
+    /// Publishes the current listener status and records it in the local history.
     func recordServerStatus(_ status: String) {
         serverStatus = status
         append("\(Date.now.formatted(date: .omitted, time: .standard))  \(status)")
     }
 
+    /// Replaces the contents of the general pasteboard with the full diagnostic report.
     func copyLogs() {
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(text, forType: .string)

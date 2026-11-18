@@ -1,5 +1,8 @@
 import SwiftUI
 
+/// Declares the menu bar panel and the diagnostics window.
+///
+/// Both scenes use the same runtime, which the application delegate keeps alive.
 @main
 struct EncoreBridgeApp: App {
     @NSApplicationDelegateAdaptor(EncoreBridgeAppDelegate.self) private var appDelegate

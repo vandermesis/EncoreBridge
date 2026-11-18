@@ -2,6 +2,10 @@ import AppKit
 import AudioToolbox
 import AVFoundation
 
+/// Queries the Music app for the current track and inspects its local audio file, when available.
+///
+/// The current playback query sends Apple Events and waits for Music's reply on
+/// the main actor. Local file inspection reports the format of the selected source.
 @MainActor
 final class LocalMusicTrackService {
     private let trackURLProvider: (() -> URL?)?
@@ -38,6 +42,11 @@ final class LocalMusicTrackService {
         self.playbackProvider = playbackProvider
     }
 
+    /// Returns a fresh playback observation, including a selected but paused track.
+    ///
+    /// The production query checks whether Music is running before creating the
+    /// AppleScript. The service reuses the compiled script across reads. A failed
+    /// query, a missing track or a changed track ID during the query returns `nil`.
     func currentPlayback() -> MusicPlaybackSnapshot? {
         if let playbackProvider { return playbackProvider() }
         if let trackURLProvider {
@@ -64,6 +73,7 @@ final class LocalMusicTrackService {
                                      isPlaying: result.atIndex(7)?.booleanValue ?? false)
     }
 
+    /// Reuses the last successful format lookup for the same file URL.
     func formatForCurrentFile(_ url: URL) -> AudioFormatSnapshot? {
         if url == cachedURL, let cachedFormat { return cachedFormat }
         cachedURL = url
@@ -71,6 +81,7 @@ final class LocalMusicTrackService {
         return cachedFormat
     }
 
+    /// Sends a Music query so macOS can request permission to automate Music.
     func requestAuthorization() {
         let source = #"tell application "Music" to get name"#
         var error: NSDictionary?
@@ -92,6 +103,10 @@ final class LocalMusicTrackService {
         return cachedFormat
     }
 
+    /// Reads source metadata from an audio file or the stored variant of a Music package.
+    ///
+    /// - Parameter url: The file or `.movpkg` package reported by Music.
+    /// - Throws: A file-read error or a corrupt-file error for an unsupported or ambiguous package.
     func audioFormat(at url: URL) throws -> AudioFormatSnapshot {
         if url.pathExtension.lowercased() == "movpkg" {
             return try downloadedPackageFormat(at: url)

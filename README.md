@@ -13,6 +13,7 @@ Start/Stop Monitoring i Close. Okno logów otwiera się wyłącznie na żądanie
 - `EncoreBridge/Features/Diagnostics` — agregacja i prezentacja logów.
 - `EncoreBridge/Integrations/EncoreAPI` — mapper, DTO i serwer HTTP dla M6.
 - [Architektura](EncoreBridge/Documentation.docc/Architecture.md), [współbieżność](EncoreBridge/Documentation.docc/Concurrency.md), [dalszy przegląd](EncoreBridge/Documentation.docc/ReviewAndNextSteps.md).
+- [Odczyt Apple Music](EncoreBridge/Documentation.docc/AppleMusicMonitoring.md) i [nasłuch logów Music](EncoreBridge/Documentation.docc/MusicLogStreaming.md).
 - [Weryfikacja refaktoru](docs/refactor-verification-20261118.md).
 - [Kontrakt sieciowy](docs/network-api.md), [odczyt Roon](docs/roon-log-monitoring.md).
 

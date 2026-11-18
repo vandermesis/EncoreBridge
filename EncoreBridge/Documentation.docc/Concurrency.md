@@ -14,6 +14,15 @@ Te pojęcia odpowiadają na różne pytania:
 | `Task` | Jaka operacja może czekać, kontynuować i zostać anulowana? | Pętla okresowego odczytu Roon |
 | Domknięcie | Jaką funkcję przekazuję innemu obiektowi? | Dostawca migawki w serwerze HTTP |
 
+## Proces, grupa zadań i kolejka I/O
+
+Proces `log stream` działa we własnej przestrzeni adresowej i komunikuje się
+z EncoreBridge przez dwa potoki. Grupa zadań Swift koordynuje ich odczyt oraz
+oczekiwanie na zakończenie. Każdy potok ma przypisaną kolejkę Dispatch, która
+wykonuje synchroniczny odczyt, kiedy zadanie Swift czeka na jego wynik.
+Zobacz <doc:MusicLogStreaming> po opis anulowania i ochrony przed callbackiem
+starego procesu.
+
 ## Jeden odczyt Roon, krok po kroku
 
 1. `RoonLogMonitor.start()` tworzy zadanie z pętlą odczytu.
