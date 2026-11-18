@@ -166,8 +166,8 @@ Skrypt z kontrolą SHA256 i cofnięciem po błędzie:
   HTTP/1.0, odmowę POST i odczytu logów, klientów równoległych, limit nagłówków
   8 KiB oraz zamykanie niepełnego żądania po 3 sekundach bez zatrzymywania serwera.
   Zapis: [test protokołu z M6](evidence/m6-network-api-20261116.json).
-- Reprodukcja testu: `python3 script/verify_network_api.py http://TauCetiCenter.local:8765`.
-  Ten sam skrypt może być wykonany na M6 przez Python 3; nie instaluje nic na urządzeniu.
+- Test wykonano poleceniem `python3 script/verify_network_api.py http://TauCetiCenter.local:8765`.
+  Skrypt pozostaje w lokalnym katalogu `script/`, poza repozytorium.
 - Testy backendu M6: 29 zaliczonych (`python3 -m unittest discover -s m6/tests -v`).
   Obejmują równoczesne odtwarzanie, zmianę wejścia, pauzę, brak bitów,
   awarię Maca, TTL i zachowanie parametrów fizycznego wyjścia SHD.
