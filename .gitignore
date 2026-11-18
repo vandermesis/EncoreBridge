@@ -96,3 +96,10 @@ playground.xcworkspace
 
 # Swift Package Manager
 # Package.resolved
+
+### Local workspace tooling
+/.codex/
+/script/
+/.build/
+*.xcresult/
+*.doccarchive/
