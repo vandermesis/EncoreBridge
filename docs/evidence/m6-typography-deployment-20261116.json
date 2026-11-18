@@ -1,0 +1,19 @@
+{
+  "after": {
+    "fs_hz": 96000,
+    "input": "COAX1",
+    "power": true,
+    "volume_db": -11,
+    "locked": true
+  },
+  "reload": "00%3A15%3Afd%3A00%3A02%3A4a encore reload 0 0",
+  "before": {
+    "fs_hz": 96000,
+    "input": "COAX1",
+    "power": true,
+    "volume_db": -11,
+    "locked": true
+  },
+  "backup": "/usr/encore/play/share/jive/applets/M6EncoreSkin/M6EncoreSkinApplet.lua.backup-20261116T143553Z",
+  "sha256": "623d4b91af25748ff9bedd25aed8c85b5ffc586bd8b370c8dc89a3401eae43f9"
+}

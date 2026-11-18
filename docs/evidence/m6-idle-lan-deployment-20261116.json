@@ -1,0 +1,63 @@
+{
+  "sha256": "d5a09b354cc7c9ba90454d556ab10ce4511e80f59165813bbba8eeaf3df3a461",
+  "backup": "/usr/encore/telemetry/telemetry.py.backup-20261116T135949Z",
+  "before": {
+    "pcm": true,
+    "power": true,
+    "volume_db": -18,
+    "locked": true,
+    "fs_hz": 96000,
+    "input": "COAX1"
+  },
+  "signal": {
+    "locked": true,
+    "digital": true,
+    "power": true,
+    "fs_hz": 96000,
+    "word_length_bits": null,
+    "timestamp": 1794837596.297199,
+    "channel_status_raw": [
+      32,
+      32,
+      0,
+      0,
+      8,
+      4,
+      80,
+      80,
+      0,
+      0
+    ],
+    "shd_out": {
+      "codec": "PCM",
+      "bits": 24,
+      "fs_hz": 96000,
+      "bits_source": "shd_studio_output_specification"
+    },
+    "pcm": true,
+    "measured_fs_hz": 96000.0,
+    "shd_source": {
+      "name": "Roon",
+      "bits": 24,
+      "fs_hz": 96000,
+      "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+      "codec": "ALAC",
+      "title": "Lake Tahoe"
+    },
+    "channel_status_fs_hz": 96000,
+    "valid": true,
+    "word_length_source": null,
+    "volume_db": -18,
+    "input": "COAX1"
+  },
+  "after": {
+    "pcm": true,
+    "power": true,
+    "volume_db": -18,
+    "locked": true,
+    "fs_hz": 96000,
+    "input": "COAX1"
+  },
+  "protected_processes_unchanged": true,
+  "supervisor": "encoretelemetry: stopped\nencoretelemetry: started\n"
+}

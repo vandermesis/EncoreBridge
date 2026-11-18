@@ -1,0 +1,644 @@
+{
+  "records": [
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:45Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:40Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:45Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:47Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:45Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:47Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:49Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:45Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:49Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:51Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:50Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:51Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:53Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:50Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:53Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:55Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:50Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:55Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:57Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:55Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:57Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:59Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:00:55Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:00:59Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:02Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:00Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:02Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:03Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:00Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:04Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:06Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:00Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:06Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:08Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:06Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:08Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:10Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:06Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:10Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:12Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:11Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:12Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:14Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:11Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:14Z",
+      "selected_input": "LAN"
+    },
+    {
+      "bridge_sources": {
+        "apple_music": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Apple Music",
+          "playing": true,
+          "artist": "Fleetwood Mac",
+          "name": "Mac",
+          "title": "Landslide (Remastered)",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:16Z"
+        },
+        "roon": {
+          "bits": 24,
+          "codec": "ALAC",
+          "application": "Roon",
+          "playing": true,
+          "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+          "zone": "SHD ROON",
+          "name": "Roon",
+          "title": "Lake Tahoe",
+          "fs_hz": 96000,
+          "observed_at": "2026-11-16T14:01:11Z"
+        }
+      },
+      "player_service": "raat",
+      "player_title": "Lake Tahoe",
+      "player_status": "play",
+      "displayed_source": {
+        "bits": 24,
+        "codec": "ALAC",
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "name": "Roon",
+        "title": "Lake Tahoe",
+        "fs_hz": 96000
+      },
+      "time": "2026-11-16T14:01:16Z",
+      "selected_input": "LAN"
+    }
+  ]
+}

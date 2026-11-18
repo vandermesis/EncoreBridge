@@ -1,0 +1,62 @@
+{
+  "supervisor": "encoretelemetry: stopped\nencoretelemetry: started\n",
+  "before": {
+    "locked": true,
+    "input": "COAX1",
+    "pcm": true,
+    "fs_hz": 96000,
+    "power": true,
+    "volume_db": -20
+  },
+  "sha256": "21bb424ac9ce7d1603fa6415087f38dae2557dddb528884c37d40b0e0350ea99",
+  "after": {
+    "locked": true,
+    "input": "COAX1",
+    "pcm": true,
+    "fs_hz": 96000,
+    "power": true,
+    "volume_db": -20
+  },
+  "signal": {
+    "digital": true,
+    "shd_source": {
+      "bits": 16,
+      "fs_hz": 44100,
+      "name": "Volumio",
+      "artist": "John Beltran",
+      "title": "Austin"
+    },
+    "fs_hz": 96000,
+    "word_length_source": null,
+    "channel_status_fs_hz": 96000,
+    "shd_out": {
+      "bits": 24,
+      "fs_hz": 96000,
+      "bits_source": "shd_studio_output_specification",
+      "codec": "PCM"
+    },
+    "valid": true,
+    "input": "COAX1",
+    "pcm": true,
+    "locked": true,
+    "power": true,
+    "measured_fs_hz": 96000.0,
+    "word_length_bits": null,
+    "channel_status_raw": [
+      32,
+      32,
+      0,
+      0,
+      8,
+      4,
+      80,
+      80,
+      0,
+      0
+    ],
+    "volume_db": -20,
+    "timestamp": 1794847425.6184781
+  },
+  "backup": "/usr/encore/telemetry/telemetry.py.backup-20261116T164339Z",
+  "protected_processes_unchanged": true
+}
