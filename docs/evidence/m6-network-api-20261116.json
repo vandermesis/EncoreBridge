@@ -1,0 +1,38 @@
+{
+  "base_url": "http://TauCetiCenter.local:8765",
+  "verified_from": "m6encore-00024a",
+  "checks": [
+    "snapshot_and_schema",
+    "head",
+    "health_and_read_only_routes",
+    "concurrent_clients",
+    "http_1_0",
+    "bounded_headers",
+    "incomplete_request_timeout_and_recovery"
+  ],
+  "snapshot": {
+    "ttl_ms": 3000,
+    "schema_version": 1,
+    "monitoring": true,
+    "generated_at": "2026-11-16T13:22:25Z",
+    "sources": {
+      "roon": {
+        "zone": "SHD ROON",
+        "playing": false,
+        "application": "Roon",
+        "name": "Roon"
+      },
+      "apple_music": {
+        "observed_at": "2026-11-16T13:22:24Z",
+        "artist": "Sara Bareilles",
+        "fs_hz": 88200,
+        "title": "Love Song",
+        "playing": true,
+        "codec": "ALAC",
+        "application": "Apple Music",
+        "bits": 24,
+        "name": "Mac"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "max_width": 536,
+    "size": 30,
+    "formats_measured": 1260,
+    "widest": "Volumio: OPUS · 16 bit · 11,025 kHz",
+    "font_height": 45
+  },
+  {
+    "max_width": 545,
+    "size": 31,
+    "formats_measured": 1260,
+    "widest": "Volumio: OPUS · 16 bit · 11,025 kHz",
+    "font_height": 46
+  },
+  {
+    "max_width": 565,
+    "size": 32,
+    "formats_measured": 1260,
+    "widest": "Volumio: OPUS · 16 bit · 11,025 kHz",
+    "font_height": 49
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "verified_from": "m6encore-00024a",
+  "request_url": "http://TauCetiCenter.local:8765/v1/now-playing",
+  "http_status": 200,
+  "snapshot": {
+    "generated_at": "2026-11-16T13:16:09Z",
+    "monitoring": true,
+    "schema_version": 1,
+    "ttl_ms": 3000,
+    "sources": {
+      "apple_music": {
+        "application": "Apple Music",
+        "artist": "Ella Fitzgerald & Louis Armstrong",
+        "bits": 24,
+        "codec": "ALAC",
+        "fs_hz": 96000,
+        "name": "Mac",
+        "observed_at": "2026-11-16T13:16:09Z",
+        "playing": true,
+        "title": "They Can't Take That Away from Me"
+      },
+      "roon": {
+        "application": "Roon",
+        "artist": "James Horner / Randy Kerber",
+        "codec": "MP3",
+        "fs_hz": 44100,
+        "name": "Roon",
+        "observed_at": "2026-11-16T13:16:07Z",
+        "playing": true,
+        "title": "A Beautiful Mind, film score: Teaching Mathematics Again",
+        "zone": "SHD ROON"
+      }
+    }
+  }
+}

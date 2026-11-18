@@ -1,0 +1,124 @@
+{
+  "shd": {
+    "consume": false,
+    "title": "Lake Tahoe",
+    "dbVolume": -10,
+    "seek": 104000,
+    "bitdepth": "24 bit",
+    "disableUiControls": false,
+    "disableVolumeControl": false,
+    "samplerate": "96 kHz",
+    "duration": 668,
+    "volatile": true,
+    "trackType": "rr",
+    "mute": false,
+    "volume": 92,
+    "codec": "",
+    "album": "50 Words for Snow",
+    "uri": "",
+    "service": "raat",
+    "status": "play",
+    "updatedb": false,
+    "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+    "stream": false,
+    "channels": 2,
+    "albumart": "/albumart?web=100/extralarge&path=/tmp/raat/albumart/18176317e2e7aba4b61b894d45af456e.jpg"
+  },
+  "supervisor": "encoretelemetry                  RUNNING   pid 29510, uptime 0:06:24\n",
+  "fixture_routes_using_live_bridge": {
+    "TOSLINK": {
+      "name": "AppleTV"
+    },
+    "LAN": {
+      "name": "Roon",
+      "fs_hz": 96000,
+      "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+      "title": "Lake Tahoe",
+      "codec": "ALAC",
+      "bits": 24
+    },
+    "USB": {
+      "name": "Mac",
+      "fs_hz": 96000,
+      "artist": "Elvis Presley",
+      "title": "Can't Help Falling In Love",
+      "codec": "ALAC",
+      "bits": 24
+    }
+  },
+  "bridge": {
+    "ttl_ms": 3000,
+    "schema_version": 1,
+    "monitoring": true,
+    "sources": {
+      "apple_music": {
+        "name": "Mac",
+        "fs_hz": 96000,
+        "playing": true,
+        "bits": 24,
+        "artist": "Elvis Presley",
+        "application": "Apple Music",
+        "title": "Can't Help Falling In Love",
+        "observed_at": "2026-11-16T13:46:34Z",
+        "codec": "ALAC"
+      },
+      "roon": {
+        "name": "Roon",
+        "fs_hz": 96000,
+        "playing": true,
+        "bits": 24,
+        "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+        "application": "Roon",
+        "title": "Lake Tahoe",
+        "observed_at": "2026-11-16T13:46:29Z",
+        "codec": "ALAC",
+        "zone": "SHD ROON"
+      }
+    },
+    "generated_at": "2026-11-16T13:46:34Z"
+  },
+  "note": "Route fixtures do not switch hardware inputs. Screen capture and observed live route establish physical-source verification separately.",
+  "verified_at": "2026-11-16T13:46:34Z",
+  "enriched_signal": {
+    "input": "COAX1",
+    "word_length_bits": null,
+    "word_length_source": null,
+    "power": true,
+    "timestamp": 1794836794.32844,
+    "pcm": true,
+    "channel_status_fs_hz": 96000,
+    "volume_db": -18,
+    "fs_hz": 96000,
+    "locked": true,
+    "measured_fs_hz": 96000.0,
+    "shd_source": {
+      "name": "Roon",
+      "fs_hz": 96000,
+      "artist": "Kate Bush / Stefan Roberts / Michael Wood",
+      "title": "Lake Tahoe",
+      "codec": "ALAC",
+      "bits": 24
+    },
+    "channel_status_raw": [
+      32,
+      32,
+      0,
+      0,
+      8,
+      4,
+      80,
+      80,
+      0,
+      0
+    ],
+    "shd_out": {
+      "codec": "PCM",
+      "fs_hz": 96000,
+      "bits": 24,
+      "bits_source": "shd_studio_output_specification"
+    },
+    "digital": true,
+    "valid": true
+  },
+  "sha256": "84c1831bfd39049784ff94db973241585a76a7e4bc35f0c23ab593c71b4f4aa8"
+}

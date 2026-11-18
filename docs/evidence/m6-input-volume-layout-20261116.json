@@ -1,0 +1,84 @@
+[
+  {
+    "sha256": "319aac1fd29b3e2926f1e86aee2acb8aa882f77b330010a359bf0ac155f2849f",
+    "before": {
+      "pcm": true,
+      "fs_hz": 96000,
+      "input": "COAX1",
+      "volume_db": -24,
+      "power": true,
+      "locked": true
+    },
+    "supervisor": "encoretelemetry: stopped\nencoretelemetry: started\n",
+    "protected_processes_unchanged": true,
+    "backup": "/usr/encore/telemetry/telemetry.py.backup-20261116T171041Z",
+    "after": {
+      "pcm": true,
+      "fs_hz": 96000,
+      "input": "COAX1",
+      "volume_db": -24,
+      "power": true,
+      "locked": true
+    },
+    "signal": {
+      "pcm": true,
+      "timestamp": 1794849047.8274031,
+      "valid": true,
+      "locked": true,
+      "input": "COAX1",
+      "volume_db": -24,
+      "channel_status_raw": [
+        32,
+        32,
+        0,
+        0,
+        8,
+        4,
+        80,
+        80,
+        0,
+        0
+      ],
+      "word_length_bits": null,
+      "word_length_source": null,
+      "power": true,
+      "measured_fs_hz": 96000.0,
+      "fs_hz": 96000,
+      "shd_source": {
+        "fs_hz": 44100,
+        "artist": "Adele",
+        "codec": "FLAC",
+        "name": "Volumio",
+        "title": "I Miss You",
+        "bits": 16
+      },
+      "digital": true,
+      "shd_out": {
+        "codec": "PCM",
+        "fs_hz": 96000,
+        "bits": 24,
+        "bits_source": "shd_studio_output_specification"
+      },
+      "channel_status_fs_hz": 96000
+    }
+  },
+  {
+    "reload": "00%3A15%3Afd%3A00%3A02%3A4a encore reload 0 0",
+    "backup": "/usr/encore/play/share/jive/applets/M6EncoreSkin/M6EncoreSkinApplet.lua.backup-20261116T171047Z",
+    "sha256": "731ee08333bc89682afc7b00d08de6fa294d2c60df1e749b728ad836bd31fd43",
+    "after": {
+      "volume_db": -24,
+      "fs_hz": 96000,
+      "power": true,
+      "input": "COAX1",
+      "locked": true
+    },
+    "before": {
+      "volume_db": -24,
+      "fs_hz": 96000,
+      "power": true,
+      "input": "COAX1",
+      "locked": true
+    }
+  }
+]
