@@ -9,20 +9,8 @@ final class LocalMusicTrackService {
     private var cachedFormat: AudioFormatSnapshot?
     private let playbackProvider: (() -> MusicPlaybackSnapshot?)?
 
-    init(trackURLProvider: (() -> URL?)? = nil, playbackProvider: (() -> MusicPlaybackSnapshot?)? = nil) {
-        self.trackURLProvider = trackURLProvider
-        self.playbackProvider = playbackProvider
-    }
-
-    func currentPlayback() -> MusicPlaybackSnapshot? {
-        if let playbackProvider { return playbackProvider() }
-        if let trackURLProvider {
-            guard let url = trackURLProvider() else { return nil }
-            return MusicPlaybackSnapshot(id: url.path, title: url.deletingPathExtension().lastPathComponent,
-                                         artist: "", album: "", sampleRate: nil, fileURL: url)
-        }
-        var error: NSDictionary?
-        let result = NSAppleScript(source: """
+    // Execution compiles the script on first use. Keep the compiled object for later polls.
+    private lazy var playbackScript = NSAppleScript(source: """
         tell application "Music"
             if not running then return {}
             try
@@ -43,7 +31,26 @@ final class LocalMusicTrackService {
                 return {}
             end try
         end tell
-        """)?.executeAndReturnError(&error)
+        """)
+
+    init(trackURLProvider: (() -> URL?)? = nil, playbackProvider: (() -> MusicPlaybackSnapshot?)? = nil) {
+        self.trackURLProvider = trackURLProvider
+        self.playbackProvider = playbackProvider
+    }
+
+    func currentPlayback() -> MusicPlaybackSnapshot? {
+        if let playbackProvider { return playbackProvider() }
+        if let trackURLProvider {
+            guard let url = trackURLProvider() else { return nil }
+            return MusicPlaybackSnapshot(id: url.path, title: url.deletingPathExtension().lastPathComponent,
+                                         artist: "", album: "", sampleRate: nil, fileURL: url)
+        }
+        guard !NSRunningApplication.runningApplications(withBundleIdentifier: "com.apple.Music").isEmpty else {
+            return nil
+        }
+
+        var error: NSDictionary?
+        let result = playbackScript?.executeAndReturnError(&error)
         guard error == nil, let result, result.numberOfItems == 7,
               let id = result.atIndex(1)?.stringValue, !id.isEmpty,
               let title = result.atIndex(2)?.stringValue else { return nil }
