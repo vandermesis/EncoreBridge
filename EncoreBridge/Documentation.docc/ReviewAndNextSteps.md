@@ -48,6 +48,20 @@ wskazywaniu konkretnych kosztów zmian, a nie nadawaniu certyfikatu architekturz
    równoczesnych źródeł, dostępność i zachowanie przy niepełnych metadanych.
 3. Szczegóły listenera HTTP. Przejrzeć limity żądań, timeout, anulowanie
    i odporność na restart usługi. Kontrakt odbiorcy opisuje `docs/network-api.md`.
+4. Powiadomienia o odtwarzaniu w Muzyce. Sprawdzić zdarzenie
+   `com.apple.Music.playerInfo` odbierane przez `DistributedNotificationCenter`
+   podczas ręcznej i automatycznej zmiany utworu, pauzy, wznowienia oraz
+   zamknięcia Muzyki. Porównać pola `userInfo` z wynikiem `currentPlayback()`
+   dla streamingu, pobranego utworu i lokalnego pliku. Osobno sprawdzić start
+   monitora, gdy utwór już gra.
+
+   Jeśli test potwierdzi użyteczność zdarzeń, wyzwalać nimi odświeżanie
+   i ograniczyć odpytywanie co 500 ms na podstawie pomiaru liczby zapytań
+   i opóźnienia aktualizacji. Zachować odczyt przez AppleScript przy starcie,
+   do uzupełniania brakujących pól i okresowej synchronizacji na wypadek
+   pominiętego zdarzenia. Przed zmianą sprawdzić, czy monitor nadal poprawnie
+   wiąże raporty o formacie z bieżącym utworem oraz odczytuje format z pliku,
+   gdy Muzyka udostępnia jego ścieżkę.
 
 Decyzje o ewentualnej zmianie automatycznego otwierania panelu jakości Music
 oraz o przeniesieniu synchronicznych odczytów z głównego aktora są otwarte.
