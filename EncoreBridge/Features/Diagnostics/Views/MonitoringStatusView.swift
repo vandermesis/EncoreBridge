@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// Represents the monitoring status with a symbol and readable text.
 struct MonitoringStatusView: View {
     let status: MusicLogMonitor.Status
     let text: String

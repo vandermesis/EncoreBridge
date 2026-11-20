@@ -20,12 +20,13 @@ dopóki nie rozwiązują konkretnego problemu.
 | `Integrations/EncoreAPI` | Kontrakt M6, mapowanie i serwer HTTP | Zmiana pól JSON lub endpointów |
 | `Documentation.docc` | Dokumentacja kompilowana z kodem | Zmiana decyzji architektonicznej |
 
-Katalogi `m6` i `script` poza targetem aplikacji zawierają osobne narzędzia i integrację
-urządzenia. Szczegóły kontraktu oraz wcześniejsze dowody wdrożenia są w `docs/network-api.md`.
+Katalog `m6` poza targetem aplikacji zawiera integrację urządzenia. Katalog `script`
+jest przeznaczony na lokalne narzędzia robocze i jest ignorowany przez Git.
+Szczegóły kontraktu oraz wcześniejsze dowody wdrożenia są w `docs/network-api.md`.
 
 ## Cykl życia
 
-`EncoreBridgeApp` deklaruje sceny `MenuBarExtra` w stylu `.window` i pojedyncze okno logów.
+``EncoreBridgeApp`` deklaruje sceny `MenuBarExtra` w stylu `.window` i pojedyncze okno logów.
 SwiftUI odpowiada za systemową prezentację panelu i menu przycisku „Opcje”.
 Nie ma ręcznego pozycjonowania menu ani osobnego menu prawego przycisku.
 Okno logów ma wyłączone automatyczne otwieranie i odtwarzanie poprzedniej sesji;
@@ -48,14 +49,24 @@ Nie wiążemy ich czasu życia z `.task` panelu ani aktywnością okna logów.
 4. ``EncoreSnapshotMapper`` zamienia migawkę na ``BridgePlaybackSnapshot``.
 5. Serwer koduje odpowiedź i odsyła ją klientowi, który wysłał żądanie.
 
+Odczyt źródła Apple Music opisują <doc:AppleMusicMonitoring> i <doc:MusicLogStreaming>.
+
 Mapowanie należy do integracji: nazwy `apple_music`, `Mac`, pola JSON, jednostki
 oraz progi świeżości 3/20 sekund wynikają z kontraktu odbiorcy. Monitoring przechowuje
 obserwacje bez znajomości tego kontraktu. Mapa nie zastępuje reguł samego źródła,
 np. wygaszania stanu Roon po utracie raportów PLAYING.
 
-Diagnostyka zbiera powiadomienia źródeł niezależnie od otwarcia okna.
-Może zawierać lokalne ścieżki. Publiczne DTO pomija identyfikatory biblioteki,
-ścieżki i surowe logi, a przy nieaktywnym źródle nie publikuje zachowanych metadanych.
+## Panel i diagnostyka
+
+``MenuBarRootView`` składa sekcje odtwarzania i ``MenuBarOptionsView``.
+Przełącznik Start/Stop steruje monitorami źródeł. Listener HTTP należy do
+``ApplicationRuntime`` i może nadal zwracać stan zatrzymanego monitorowania.
+
+``DiagnosticsModel`` zbiera powiadomienia źródeł i serwera przez cały czas
+działania aplikacji. Zachowuje do 50 ostatnich wpisów, a ``LogSummaryView``
+pokazuje do 10 od najnowszego. Copy Logs kopiuje lokalny raport uwzględniający także
+stan źródeł i ścieżki. ``BridgePlaybackSnapshot`` publikuje wyłącznie pola kontraktu
+sieciowego i pomija szczegóły odtwarzania nieaktywnego źródła.
 
 ## SRP i DIP w praktyce
 

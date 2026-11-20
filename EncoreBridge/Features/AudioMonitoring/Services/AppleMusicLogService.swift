@@ -1,20 +1,32 @@
 import Darwin
 import Foundation
 
+/// Runs Music's unified-log subscription and delivers its messages on the main actor.
+///
+/// Each run drains standard output and standard error concurrently. Completion
+/// waits for both readers and for Foundation to report the subprocess's exit status.
 @MainActor
 final class AppleMusicLogService {
     private let makeProcess: @MainActor () -> Process
     private var process: Process?
     private var readingTask: Task<Void, Never>?
 
+    /// Creates a service that can substitute a fresh fixture process in tests.
     init(makeProcess: (@MainActor () -> Process)? = nil) {
         self.makeProcess = makeProcess ?? Self.makeLogProcess
     }
 
+    /// Indicates that this service still owns an active monitoring run.
     var isRunning: Bool {
         process != nil
     }
 
+    /// Launches a subscription when there is no active run.
+    ///
+    /// - Parameters:
+    ///   - onMessage: Receives the decoded message or the original line when no message field is found.
+    ///   - onFailure: Receives an unexpected exit or read error from the active run.
+    /// - Throws: The error Foundation reports if it cannot launch the subprocess.
     func start(
         onMessage: @escaping (String) -> Void,
         onFailure: @escaping (String) -> Void
@@ -94,6 +106,10 @@ final class AppleMusicLogService {
         }
     }
 
+    /// Invalidates the current run, cancels its readers and signals the subprocess to terminate.
+    ///
+    /// A new run can start while the old subprocess is finishing. Callbacks
+    /// from the old run are discarded.
     func stop() {
         let stoppedProcess = process
         process = nil

@@ -1,5 +1,8 @@
 import Foundation
 
+/// Interprets Music log messages and quality labels as partial source formats.
+///
+/// The monitor decides which reports to associate with the current track.
 struct AudioFormatParser: Sendable {
     private let standardSampleRates: Set<Int> = [
         8_000, 11_025, 12_000, 16_000, 22_050, 24_000, 32_000,
@@ -7,6 +10,8 @@ struct AudioFormatParser: Sendable {
         192_000, 352_800, 384_000, 705_600, 768_000
     ]
 
+    /// Extracts a supported codec and sample rate from the visible quality label.
+    /// An explicit bit depth can supplement the result.
     func parseQualityLabel(_ label: String) -> AudioFormatSnapshot? {
         guard let rate = captures(in: label, pattern: #"([0-9]+(?:[.,][0-9]+)?)\s*kHz"#)?.first,
               let kilohertz = Double(rate.replacingOccurrences(of: ",", with: ".")),
@@ -48,6 +53,8 @@ struct AudioFormatParser: Sendable {
         )?.first
     }
 
+    /// Recognizes playback and active-format reports from Music's diagnostic log.
+    /// Unrecognized or unsupported fields remain absent from the result.
     func parseActiveAudioFormat(_ message: String) -> AudioFormatSnapshot? {
         if let format = parsePlaybackFormat(message) {
             return format

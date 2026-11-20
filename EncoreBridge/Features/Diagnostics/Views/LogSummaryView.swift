@@ -1,5 +1,8 @@
 import SwiftUI
 
+/// Shows the monitoring status and up to ten recent diagnostic entries, newest first.
+///
+/// Copy Logs exports the report from the shared diagnostics model.
 struct LogSummaryView: View {
     let diagnostics: DiagnosticsModel
 

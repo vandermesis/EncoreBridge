@@ -1,12 +1,18 @@
 import AppKit
 import ApplicationServices
 
-/// Reads Music's displayed source quality when a log report is unavailable.
-/// Requires the user's Accessibility authorization. It never requests it itself.
+/// Reads the source quality displayed by Music using Accessibility.
+///
+/// Requires an existing Accessibility grant. The service can press Music's
+/// quality badge and attempt to close the popover it observes afterward.
 @MainActor
 final class MusicQualityService {
     var hasReadAccess: Bool { AXIsProcessTrusted() }
 
+    /// Looks for the quality badge under visible metadata matching the track's title.
+    ///
+    /// Each sleep allows the UI to update between reads. The caller verifies
+    /// the current track again after this asynchronous operation.
     func audioFormat(for track: MusicPlaybackSnapshot) async -> AudioFormatSnapshot? {
         guard hasReadAccess,
               let music = NSRunningApplication.runningApplications(withBundleIdentifier: "com.apple.Music").first else { return nil }

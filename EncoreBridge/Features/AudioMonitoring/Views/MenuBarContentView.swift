@@ -1,6 +1,7 @@
 import AppKit
 import SwiftUI
 
+/// Displays the playing sources supplied by the shared playback monitor.
 struct MenuBarContentView: View {
     let monitor: PlaybackMonitor
 

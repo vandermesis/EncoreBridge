@@ -1,6 +1,10 @@
 import Foundation
 import Network
 
+/// Serves the current M6 snapshot in response to requests from the local link.
+///
+/// The runtime supplies a main-actor closure that captures the current state
+/// on demand. The listener's lifetime follows the application.
 @MainActor
 final class BridgeHTTPServer {
     nonisolated static let defaultPort: UInt16 = 8765

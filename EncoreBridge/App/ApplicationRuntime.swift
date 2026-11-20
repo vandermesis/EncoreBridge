@@ -21,11 +21,13 @@ final class ApplicationRuntime {
         self.server = server
     }
 
+    /// Starts source monitoring, then starts the HTTP listener.
     func start() {
         monitor.start()
         server.start()
     }
 
+    /// Stops the HTTP listener before stopping the source monitors at app termination.
     func stop() {
         server.stop()
         monitor.stop()

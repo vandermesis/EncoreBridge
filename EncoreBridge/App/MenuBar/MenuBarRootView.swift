@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// Composes playback information and commands in the system menu bar panel.
 struct MenuBarRootView: View {
     let monitor: PlaybackMonitor
     let diagnostics: DiagnosticsModel

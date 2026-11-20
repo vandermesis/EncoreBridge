@@ -14,6 +14,7 @@ final class PlaybackMonitor {
         self.roon = roon ?? RoonLogMonitor()
     }
 
+    /// Returns the playback sections whose sources report active playback.
     var playingSources: [PlaybackSourceSnapshot] {
         var sources: [PlaybackSourceSnapshot] = []
         if let playback = music.currentPlayback, playback.isPlaying {
@@ -48,6 +49,7 @@ final class PlaybackMonitor {
                         isAvailable: roon.isRunning && roon.state.isPlaying, zone: roon.state.zone))
     }
 
+    /// Starts both sources once per monitoring session.
     func start() {
         guard !isMonitoring else { return }
         isMonitoring = true
@@ -55,6 +57,7 @@ final class PlaybackMonitor {
         roon.start()
     }
 
+    /// Stops both sources and clears the monitoring flag used by the HTTP snapshot.
     func stop() {
         music.stop()
         roon.stop()

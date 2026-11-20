@@ -1,6 +1,10 @@
 import Foundation
 import Observation
 
+/// Combines Music playback observations with source format reports for the current track.
+///
+/// Polling and selected log messages refresh the track. A matching local file
+/// takes precedence over a format from Music's quality panel or diagnostic logs.
 @MainActor
 @Observable
 final class MusicLogMonitor {
@@ -52,6 +56,7 @@ final class MusicLogMonitor {
         }
     }
 
+    /// Starts the log stream and schedules periodic playback observations.
     func start() {
         guard !logService.isRunning else { return }
         status = .starting
@@ -81,6 +86,7 @@ final class MusicLogMonitor {
         }
     }
 
+    /// Stops the stream and cancels polling and quality probes.
     func stop() {
         logService.stop()
         localTrackTask?.cancel()
@@ -91,6 +97,7 @@ final class MusicLogMonitor {
         appendDiagnostic("Monitoring zatrzymany")
     }
 
+    /// Associates a useful diagnostic message with the current playback observation.
     func consume(_ message: String) {
         // Bind each useful report to Music's current identity, rather than a
         // queue item that may already refer to a prepared, unplayed track.
@@ -110,6 +117,7 @@ final class MusicLogMonitor {
         updateAudioFormat()
     }
 
+    /// Refreshes track identity, clears obsolete reports and schedules quality probes when eligible.
     func refreshLocalTrack() {
         let playback = localTrackService.currentPlayback()
         lastPlaybackUpdate = .now

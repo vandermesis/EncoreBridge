@@ -1,6 +1,9 @@
 import AppKit
 import SwiftUI
 
+/// Routes menu commands to the existing monitors, diagnostics model and app lifecycle.
+///
+/// Start and Stop affect the monitors. The HTTP listener belongs to the app runtime.
 struct MenuBarOptionsView: View {
     @Environment(\.openWindow) private var openWindow
     let monitor: PlaybackMonitor
